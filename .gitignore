@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Generated responsive image variants (npm run images)
+public/renders/opt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

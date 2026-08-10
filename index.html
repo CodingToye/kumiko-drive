@@ -1,10 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kumiko-drive</title>
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Kumiko Drive</title>
+    <meta
+      name="description"
+      content="A cordless drill built like a piece of joinery. 120 Nm of brushless torque, 12+1 clutch settings, 1.4 kg. A concept by Kumiko."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kumiko Drive" />
+    <meta
+      property="og:description"
+      content="A cordless drill built like a piece of joinery. A concept by Kumiko."
+    />
+    <meta property="og:image" content="/renders/opt/drive_sh-1280.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- LCP image: fetched in parallel with the JS bundle rather than after it. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/renders/opt/drive_sh-1920.avif"
+      imagesrcset="/renders/opt/drive_sh-640.avif 640w, /renders/opt/drive_sh-1280.avif 1280w, /renders/opt/drive_sh-1920.avif 1920w, /renders/opt/drive_sh-2560.avif 2560w"
+      imagesizes="(min-width: 640px) 100vw, 130vw"
+      fetchpriority="high"
+    />
   </head>
   <body>
     <div id="root"></div>
